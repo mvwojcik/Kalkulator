@@ -18,6 +18,7 @@ public class MainStageController {
     int b1;
     int temp;
     boolean afterEqual;
+    boolean temp1;
     @FXML
     private Label resultLabel;
 
@@ -35,6 +36,7 @@ public class MainStageController {
         inputTextField.textProperty().bindBidirectional(b);
         signLabel.textProperty().bindBidirectional(sign);
         afterEqual = true;
+        temp1=false;
     }
 
     @FXML
@@ -46,17 +48,24 @@ public class MainStageController {
         String temp = ((Button) actionEvent.getSource()).getText();
         b.setValue(b.getValue() + temp);
         b1 = Integer.parseInt(b.getValue());
-
+        temp1=false;
     }
 
     @FXML
     public void setDigit(ActionEvent actionEvent) {
-        wyborDzialania(actionEvent);
-        a1 = b1;
-        b.setValue("0");
-        a.setValue(String.valueOf(a1));
-
-    }
+        if(temp1 == true)
+        {
+            wyborDzialania(actionEvent);
+        }
+        else {
+            wyborDzialania(actionEvent);
+            a1 = b1;
+            b.setValue("0");
+            b1 = Integer.parseInt(b.getValue());
+            a.setValue(String.valueOf(a1));
+            temp1 = true;
+        }
+        }
 
     @FXML
     public void equalsOnAction() {
@@ -64,6 +73,7 @@ public class MainStageController {
         b1 = temp;
         b.setValue(String.valueOf(b1));
         a.setValue(b.getValue());
+        a1=0;
         signLabel.setText("");
         afterEqual = true;
     }
@@ -71,11 +81,8 @@ public class MainStageController {
     @FXML
     public void opposite() {
         int temp = Integer.parseInt(b.getValue());
-        temp *= -1;
-        b.setValue(String.valueOf(temp));
+        b.setValue(String.valueOf(temp*-1));
         b1=Integer.parseInt(b.getValue());
-        System.out.println(b);
-        System.out.println(temp);
     }
 
 
@@ -110,7 +117,13 @@ public class MainStageController {
     }
 
     private void Dzielenie() {
+        if(b1==0)
+        {
+            System.out.println("NIE MOZNA DZIELIC PRZEZ ZERO! JAKIS ERROR WRZUCIC");
+            b1=1;
+        }
         temp = a1 / b1;
+
     }
 
     private void Mnożenie() {
