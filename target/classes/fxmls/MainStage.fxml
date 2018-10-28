@@ -51,7 +51,7 @@
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#setNumeral" text="6" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#setNumeral" text="8" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#setNumeral" text="9" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="+/-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#opposite" text="+/-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#setNumeral" text="0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#equalsOnAction" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
             <Button maxHeight="100.0" maxWidth="98.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="17.0" text="+" GridPane.columnIndex="4" GridPane.rowIndex="1" />
