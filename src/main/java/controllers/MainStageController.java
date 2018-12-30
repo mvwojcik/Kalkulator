@@ -1,8 +1,7 @@
 package controllers;
 
-import javafx.beans.property.Property;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
+
+import javafx.beans.property.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,131 +9,117 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class MainStageController {
-    Property<String> a = new SimpleStringProperty();
-    Property<String> b = new SimpleStringProperty();
-    Property<String> sign = new SimpleStringProperty();
-    char znak = 'x';
-    int a1;
-    int b1;
-    int temp;
-    boolean afterEqual;
-    boolean temp1;
+    IntegerProperty firstNumber = new SimpleIntegerProperty(0);
+    IntegerProperty secondNumber = new SimpleIntegerProperty(0);
+    StringProperty digit = new SimpleStringProperty("");
+    IntegerProperty result1 = new SimpleIntegerProperty(0);
+    StringProperty firstNumberS = new SimpleStringProperty("0");
+    StringProperty secondNumberS = new SimpleStringProperty("0");
+    BooleanProperty firstRun = new SimpleBooleanProperty(true);
+    BooleanProperty check = new SimpleBooleanProperty(false);
+    BooleanProperty isOnNumber = new SimpleBooleanProperty(false);
     @FXML
     private Label resultLabel;
-
     @FXML
     private Label signLabel;
     @FXML
     private TextField inputTextField;
 
-    /////////////////////////////////////////////////////////////////////////////////////////////
     @FXML
-    public void initialize() {
-        a.setValue("0");
-        b.setValue("0");
-        resultLabel.textProperty().bindBidirectional(a);
-        inputTextField.textProperty().bindBidirectional(b);
-        signLabel.textProperty().bindBidirectional(sign);
-        afterEqual = true;
-        temp1=false;
+    private void initialize() {
+        this.resultLabel.setVisible(true);
+        secondNumberS.bindBidirectional(this.inputTextField.textProperty());
+        this.firstNumberS.bindBidirectional(this.resultLabel.textProperty());
     }
 
     @FXML
-    public void setNumeral(ActionEvent actionEvent) {
-        if (afterEqual == true) {
-            b.setValue("0");
-            afterEqual = false;
+    void setDigit(ActionEvent event) {
+        this.digit.setValue(((Button) event.getSource()).getText());
+        this.signLabel.textProperty().bindBidirectional(this.digit);
+        if (!check.getValue()) {
+            this.moveup();
+
+            check.setValue(true);
         }
-        String temp = ((Button) actionEvent.getSource()).getText();
-        b.setValue(b.getValue() + temp);
-        b1 = Integer.parseInt(b.getValue());
-        temp1=false;
+        isOnNumber.setValue(true);
+    }
+
+
+    @FXML
+    void setNumeral(ActionEvent event) {
+        secondNumber.setValue(Integer.valueOf(secondNumberS.getValue() + ((Button) event.getSource()).getText()));
+        secondNumberS.setValue(String.valueOf(secondNumber.get()));
+
+        System.out.println("First Number:" + firstNumberS.getValue());
+        System.out.println("Second number: " + secondNumber.getValue());
+        isOnNumber.setValue(false);
     }
 
     @FXML
-    public void setDigit(ActionEvent actionEvent) {
-        if(temp1 == true)
-        {
-            wyborDzialania(actionEvent);
-        }
-        else {
-            wyborDzialania(actionEvent);
-            a1 = b1;
-            b.setValue("0");
-            b1 = Integer.parseInt(b.getValue());
-            a.setValue(String.valueOf(a1));
-            temp1 = true;
-        }
-        }
+    void equalsOnAction() {
+        getResult();
+        this.firstNumberS.setValue(String.valueOf(this.result1.getValue()));
+        this.firstNumber.setValue(this.result1.getValue());
+        this.clearSecondNumber();
+        firstRun.setValue(false);
 
-    @FXML
-    public void equalsOnAction() {
-        wyborZnaku(znak);
-        b1 = temp;
-        b.setValue(String.valueOf(b1));
-        a.setValue(b.getValue());
-        a1=0;
-        signLabel.setText("");
-        afterEqual = true;
     }
 
-    @FXML
-    public void opposite() {
-        int temp = Integer.parseInt(b.getValue());
-        b.setValue(String.valueOf(temp*-1));
-        b1=Integer.parseInt(b.getValue());
+    private void clearSecondNumber() {
+        secondNumber.setValue(0);
+        secondNumberS.setValue(String.valueOf(secondNumber.get()));
     }
 
 
-    public void wyborDzialania(ActionEvent actionEvent) {
-        String temp = ((Button) actionEvent.getSource()).getText();
-        znak = temp.charAt(0);
-        signLabel.setText(String.valueOf(znak));
+    void moveup() {
+        this.firstNumberS.setValue(this.secondNumberS.getValue());
+        this.secondNumberS.setValue("0");
+        this.secondNumber.setValue(0);
+        firstNumber.setValue(Integer.valueOf(firstNumberS.getValue()));
     }
 
-    public void wyborZnaku(char x) {
-        char z = x;
+    private void getResult() {
+        char x = this.signLabel.getText().charAt(0);
         switch (x) {
             case '+':
-                System.out.println("Dodawanie");
-                Dodawanie();
+                this.result1.setValue(add());
                 break;
             case '-':
-                System.out.println("Odejmowanie");
-                Odejmowanie();
+                this.result1.setValue(substract());
                 break;
             case '*':
-                System.out.println("Mnozenie");
-                Mnożenie();
+                this.result1.setValue(multiply());
                 break;
             case '/':
-                System.out.println("Dzielenie");
-                Dzielenie();
-                break;
-            default:
+                this.result1.setValue(divide());
                 break;
         }
     }
 
-    private void Dzielenie() {
-        if(b1==0)
-        {
-            System.out.println("NIE MOZNA DZIELIC PRZEZ ZERO! JAKIS ERROR WRZUCIC");
-            b1=1;
-        }
-        temp = a1 / b1;
-
+    public int add() {
+        int a = firstNumber.getValue();
+        int b = secondNumber.getValue();
+        return a + b;
     }
 
-    private void Mnożenie() {
-        temp = a1 * b1;
+    public int substract() {
+        int a = firstNumber.getValue();
+        int b = secondNumber.getValue();
+        return a - b;
     }
 
-    private void Odejmowanie() {
-        temp = a1 - b1;
+    public int multiply() {
+        return firstNumber.getValue() * secondNumber.getValue();
     }
 
-    private void Dodawanie() {
-        temp = a1 + b1;
+    public int divide() {
+        return firstNumber.getValue() / secondNumber.getValue();
     }
+
+    @FXML
+    void opposite(ActionEvent event) {
+        this.secondNumber.setValue(this.secondNumber.getValue() * -1);
+        this.secondNumberS.setValue(String.valueOf(secondNumber.getValue()));
+    }
+
 }

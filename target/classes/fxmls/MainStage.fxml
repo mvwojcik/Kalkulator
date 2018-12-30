@@ -54,10 +54,10 @@
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#opposite" text="+/-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#setNumeral" text="0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#equalsOnAction" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button maxHeight="100.0" maxWidth="98.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="17.0" text="+" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button maxHeight="100.0" maxWidth="66.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="66.0" text="-" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button maxHeight="100.0" maxWidth="89.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="89.0" text="/" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button maxHeight="100.0" maxWidth="77.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="77.0" text="*" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="addButton" maxHeight="100.0" maxWidth="98.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="17.0" text="+" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="substractButton" maxHeight="100.0" maxWidth="66.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="66.0" text="-" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="divideButton" maxHeight="100.0" maxWidth="89.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="89.0" text="/" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="multiplyButton" maxHeight="100.0" maxWidth="77.0" mnemonicParsing="false" onAction="#setDigit" prefHeight="100.0" prefWidth="77.0" text="*" GridPane.columnIndex="4" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </children>
