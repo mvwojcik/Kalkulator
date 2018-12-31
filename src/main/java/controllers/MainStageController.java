@@ -2,6 +2,8 @@ package controllers;
 
 
 import javafx.beans.property.*;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -31,6 +33,13 @@ public class MainStageController {
         this.resultLabel.setVisible(true);
         secondNumberS.bindBidirectional(this.inputTextField.textProperty());
         this.firstNumberS.bindBidirectional(this.resultLabel.textProperty());
+        this.inputTextField.textProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                if (!newValue.matches("\\d*")) {
+                    inputTextField.setText(newValue.replaceAll("[^\\d]", ""));
+                }
+            }
+        });
     }
 
     @FXML
