@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2829351f-a8e5-49ac-a31a-0ab29ce39daa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/Stylesheet1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MainStageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainStageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kalkulator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/MainStage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/MainStage.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,15 +21,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainStageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="305">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1419#1604#0" expanded="true" />
-                <element signature="e#1603#1604#0" expanded="true" />
-                <element signature="e#4634#4635#0" expanded="true" />
-                <element signature="e#4705#4706#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/stylesheets/Stylesheet1.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-269">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -44,8 +52,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxmls/MainStage.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -57,6 +65,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -78,6 +87,7 @@
         <option value="$PROJECT_DIR$/src/main/java/main/math/DoMaths.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/math/Variables.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/MainStageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/stylesheets/Stylesheet1.css" />
       </list>
     </option>
   </component>
@@ -89,10 +99,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1080" />
-    <option name="y" value="10" />
-    <option name="width" value="855" />
-    <option name="height" value="880" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -104,57 +114,65 @@
         <subPane>
           <expand>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Kalkulatorzeequals" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kalkulatorzeequals" type="462c0819:PsiDirectoryNode" />
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="fxmls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kalkulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kalkulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,8 +184,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546197003571" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553211289073" />
     <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -189,7 +209,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="Kalkulatorzeequals" />
+      <module name="Kalkulator" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -218,17 +238,18 @@
       <updated>1540466098385</updated>
       <workItem from="1546170880009" duration="19729000" />
       <workItem from="1546264680553" duration="1038000" />
+      <workItem from="1553210915509" duration="461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20767000" />
+    <option name="totallyTimeSpent" value="21228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1590604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -238,7 +259,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37393767" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04249292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -266,37 +287,26 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/math.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/beans/property/SimpleStringProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/beans/property/SimpleStringProperty.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/math/DoMaths.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/main/design/ButtonsDesign.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/main/math/Variables.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/text/normalizer/UCharacterProperty.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/text/normalizer/UCharacterProperty.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxmls/MainStage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainStageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stylesheets/Stylesheet1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1419#1604#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#4634#4635#0" expanded="true" />
-            <element signature="e#4705#4706#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-269">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -307,11 +317,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxmls/MainStage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainStageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="305">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
